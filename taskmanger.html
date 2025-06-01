@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="TaskM.css">
+    <title> Task Management  </title>
+    <nav>
+        <h1>Task Management</h1>
+        <button class="nav-btn active" data-target="dashboard"> Dashboard </button>
+        <button class="nav-btn" data-target="tasks"> Tasks </button>
+        <button class="nav-btn" data-target="calendar"> Calendar </button>
+        <button class="nav-btn" data-target="analytics"> Analytics </button>
+        <button class="nav-btn" data-target="setting"> Setting </button>
+    </nav>
+</head>
+<body>
+    <div>
+        <section id="dashboard" class="page">
+            <h2> Dashboard </h2>
+            <div class="stats">
+                <div class="stats-card">
+                    <h3>Total Tasks </h3>
+                    <p id="Total-tasks">0</p>
+                </div>
+                <div class="stats-card">
+                    <h3>Completed</h3>
+                    <p id="completed-task">0</p>
+                </div>
+                <div class="stats-card">
+                    <h3>Pending</h3>
+                    <p id="Pending-task">0</p>
+                </div>
+                    <div class="stats-card">
+                    <h3>Today's task</h3>
+                    <p id="Today-task">0</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+</body>
+</html>
