@@ -37,7 +37,17 @@
                 </div>
             </div>
         </section>
+        <section id="tasks" class="page hidden">
+            <h2>Tasks</h2>
+            <form id="task-form" autocomplete="off">
+                <input type="text" id="task-title-input" placeholder="Task title" required aria-label="Task title">
+                <input type="date" id="task-date-input" required aria-label="Task due date" />
+                <button type="submit" aria-label="Add or Save Task">Add Task</button>
+            </form>
+             <ul class="task-list" id="task-list" ></ul>
+        </section>
     </div>
+
     
 </body>
 </html>

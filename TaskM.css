@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+
 html,body{
     margin: 0; padding: 0;
     font-family: 'Poppins',sans-serif;
@@ -17,11 +18,11 @@ a {
     text-decoration: none;
     cursor: pointer;
     transition: 0.3s ease-in-out;
-  }
+}
 
  a:hover {
     color: #4f46e5;
-  }
+}
 
 header{
     background-color: #4f46e5;
@@ -36,11 +37,13 @@ header{
 header h1 {
     font-weight: 700;
     font-size: 1.5rem;
-  }
+    
+}
 
 
 nav{
     display: flex;
+    justify-content: space-between;
     gap: 1rem;  
     background-color: #534be8; 
     color: white;
@@ -57,29 +60,32 @@ nav button {
     border-radius: 4px;
     cursor: pointer;
     transition:0.3s ease-in-out;
-  }
+}
 
 nav button:hover, nav button.active {
     background: #4f46e5;
-  }
+}
 
 main {
     padding: 1.5rem 2rem;
     max-width: 900px;
     margin: 3rem;
     min-height: 75vh;
-  }
+}
 
 /* dash board*/
 
 section h2{
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
+    margin-left: 10rem;
 }
 
 .stats{
     display: flex;
     gap: 1rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
 }
 
 
@@ -92,5 +98,18 @@ section h2{
     padding: 1rem 1.5rem;
     border-radius: 15px;
     box-shadow: 5px 5px 15px;
+}
+
+.stat-card h3 {
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 0.25rem;
+}
+
+
+.stat-card p {
+    font-size: 2rem;
+    font-weight:700;
+    margin: 0;
 }
 
