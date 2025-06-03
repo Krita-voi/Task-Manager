@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="TaskM.css">
+    <link rel="stylesheet" href="TaskManager.css">
     <title> Task Management  </title>
     <nav>
         <h1>Task Management</h1>
-        <button class="nav-btn active" data-target="dashboard"> Dashboard </button>
-        <button class="nav-btn" data-target="tasks"> Tasks </button>
-        <button class="nav-btn" data-target="calendar"> Calendar </button>
-        <button class="nav-btn" data-target="analytics"> Analytics </button>
-        <button class="nav-btn" data-target="setting"> Setting </button>
+        <div class="navbar-items">
+            <button class="nav-btn active" data-target="dashboard"> Dashboard </button>
+            <button class="nav-btn" data-target="tasks"> Tasks </button>
+            <button class="nav-btn" data-target="calendar"> Calendar </button>
+            <button class="nav-btn" data-target="analytics"> Analytics </button>
+            <button class="nav-btn" data-target="setting"> Setting </button>
+        </div>
     </nav>
 </head>
 <body>
@@ -41,10 +43,10 @@
             <h2>Tasks</h2>
             <form id="task-form" autocomplete="off">
                 <input type="text" id="task-title-input" placeholder="Task title" required aria-label="Task title">
-                <input type="date" id="task-date-input" required aria-label="Task due date" />
+                <input type="date" id="task-date-input" required ="Task due date" />
                 <button type="submit" aria-label="Add or Save Task">Add Task</button>
             </form>
-             <ul class="task-list" id="task-list" ></ul>
+             <ul class="task-list" id="task-list"></ul>
         </section>
     </div>
 

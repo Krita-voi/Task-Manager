@@ -43,12 +43,16 @@ header h1 {
 
 nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 1rem;  
-    background-color: #534be8; 
+    background-color: #4f46e5;   
     color: white;
 }
 
+.navbar-items{
+    display: flex;
+
+}
 
 nav button {
     background: transparent;
@@ -63,7 +67,7 @@ nav button {
 }
 
 nav button:hover, nav button.active {
-    background: #4f46e5;
+    background: #4338ca;
 }
 
 main {
@@ -78,12 +82,15 @@ main {
 section h2{
     display: flex;
     justify-content: flex-start;
-    margin-left: 10rem;
+    margin: 3rem 10rem 1.5rem 10rem;
+    margin-top: 5rem;
+    font-weight: 600;
+    font-size: 1.75rem;
 }
 
 .stats{
     display: flex;
-    gap: 1rem;
+    gap: 3rem;
     margin-left: 10rem;
     margin-right: 10rem;
 }
@@ -91,13 +98,16 @@ section h2{
 
 .stats-card{
     flex: 1 1 150px;
-    background-color: hsl(0, 0%, 100%);
+    background-color: hsla(70, 100%, 99%, 0.986);
     margin: auto;
     text-align: center;
     justify-content: space-around;
     padding: 1rem 1.5rem;
-    border-radius: 15px;
-    box-shadow: 5px 5px 15px;
+    border-radius: 14px;
+    box-shadow: 1px 1px 2px ;
+    font-weight: 700;
+    font-size: 1.2rem;
+    font-family: 'Poppins',sans-serif;
 }
 
 .stat-card h3 {
@@ -111,5 +121,49 @@ section h2{
     font-size: 2rem;
     font-weight:700;
     margin: 0;
+}
+
+/* Taks */
+
+#tasks h2{
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: 1.75rem;
+}
+
+
+form{
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 10rem;
+    justify-content: space-between;
+    align-items: end;
+    flex-wrap: wrap;
+}
+
+form input{
+    flex: 1 1 200px;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    transition: 0.3s ease-in-out;
+}
+
+form button {
+  padding: 0.75rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+form button:hover {
+  background-color: #4338ca;
 }
 
