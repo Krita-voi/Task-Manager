@@ -82,7 +82,7 @@ main {
 section h2{
     display: flex;
     justify-content: flex-start;
-    margin: 3rem 10rem 1.5rem 10rem;
+    margin: 3rem 10rem 1.5rem 10rem; /* used for top, right, buttom and left respectively*/
     margin-top: 5rem;
     font-weight: 600;
     font-size: 1.75rem;
@@ -91,36 +91,35 @@ section h2{
 .stats{
     display: flex;
     gap: 3rem;
-    margin-left: 10rem;
-    margin-right: 10rem;
+    justify-content: space-between;
 }
 
 
 .stats-card{
     flex: 1 1 150px;
     background-color: hsla(70, 100%, 99%, 0.986);
-    margin: auto;
     text-align: center;
     justify-content: space-around;
     padding: 1rem 1.5rem;
-    border-radius: 14px;
+    border-radius: 8px;
     box-shadow: 1px 1px 2px ;
-    font-weight: 700;
-    font-size: 1.2rem;
+    font-weight: 300;   
+    font-size: 1rem;
     font-family: 'Poppins',sans-serif;
 }
 
 .stat-card h3 {
-    font-weight: 700;
-    font-size: 3rem;
+    font-size: 1.5rem;
     margin-bottom: 0.25rem;
+
 }
 
-
-.stat-card p {
-    font-size: 2rem;
-    font-weight:700;
-    margin: 0;
+#Total-tasks,
+#completed-task,
+#Pending-task,
+#Today-task{
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
 }
 
 /* Taks */
@@ -135,7 +134,7 @@ section h2{
 form{
     display: flex;
     gap: 1rem;
-    margin: 2rem 10rem;
+    margin: 2rem 10rem; /* 2rem for top&buttom and 10rem for left&right */
     justify-content: space-between;
     align-items: end;
     flex-wrap: wrap;
