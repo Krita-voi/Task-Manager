@@ -74,7 +74,7 @@ main {
     padding: 1.5rem 2rem;
     max-width: 900px;
     margin: 3rem;
-    min-height: 75vh;
+    min-height: 5vh;
 }
 
 /* dash board*/
@@ -166,3 +166,47 @@ form button:hover {
   background-color: #4338ca;
 }
 
+/* calender */
+
+.calendar-section {
+  margin: 3rem 10rem;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.calendar-control h2 {
+  margin: 0;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.calendar-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.calendar-table th,
+.calendar-table td {
+  padding: 0.75rem;
+  border: 1px solid #e5e7eb;
+}
+
+.calendar-table td {
+  height: 80px;
+}
+
+.calendar-table td:hover {
+  background-color: #f3f4f6;
+  cursor: pointer;
+}
