@@ -21,3 +21,53 @@ buttons.forEach(button => {
         }
     });
 });
+
+
+//task management 
+const taskForm = documnet.getElementById('task-form');
+const taskTitleInput = document.getElementById('task-title-input');
+const taskDateInput = document.getElementById('task-date-input');
+const taskList = document.getElementById('task-list');
+
+//to hold task declaed arry
+let task = []
+
+function Tasks() {
+    // Clear current list
+    taskList.innerHTML = '';
+
+    task.forEach((task, index) => {
+        const li = document.createElement('li');
+
+        
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.checked = task.completed;
+        checkbox.setAttribute('aria-label', `Mark task "${task.title}" as completed`);
+        checkbox.addEventListener('change', () => {
+            task.completed = checkbox.checked;
+        });
+
+        // Task title and date
+        const titleSpan = document.createElement('span');
+        titleSpan.textContent = `${task.title} (Due: ${task.date})`;
+        if (task.completed) {
+            titleSpan.style.textDecoration = 'line-through';
+            titleSpan.style.color = 'black';
+        }
+        // Delete button for task
+        const deleteBtn = document.createElement('button');
+        deleteBtn.textContent = 'Delete';
+        deleteBtn.setAttribute('aria-label', `Delete task "${task.title}"`);
+        deleteBtn.addEventListener('click', () => {
+            task.splice(index, 1);
+            Tasks();
+        });
+
+        li.appendChild(checkbox);
+        li.appendChild(titleSpan);
+        li.appendChild(deleteBtn);
+
+        taskList.appendChild(li);
+    });
+}
