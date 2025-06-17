@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="TaskManager.css">
     <title> Task Management  </title>
+    
+</head>
+<body>
     <nav>
         <h1>Task Management</h1>
         <div class="navbar-items">
@@ -15,8 +18,8 @@
             <button class="nav-btn" data-target="setting"> Setting </button>
         </div>
     </nav>
-</head>
-<body>
+
+
     <main>
         <section id="dashboard" class="page">
             <h2> Dashboard </h2>
@@ -44,12 +47,12 @@
             <form id="task-form" autocomplete="off">
                 <input type="text" id="task-title-input" placeholder="Task title" required aria-label="Task title">
                 <input type="date" id="task-date-input" required ="Task due date" />
-                <button type="submit" aria-label="Add or Save Task">Add Task</button>
+                <button id="tsk-btn" type="submit" aria-label="Add or Save Task">Add Task</button>
             </form>
              <ul class="task-list" id="task-list"></ul>
         </section>
         
-        <section id="calendar" class="page-hidden">
+        <section id="calendar" class="page hidden">
             <h2>Calendar</h2>
              <div class="calendar-header" >
                 <button id="prevBtn">&lt</button>
@@ -73,12 +76,12 @@
             </div>
         </section>
 
-        <section id="setting" class="page-hidden">
+        <section id="setting" class="page hidden">
             <h2>Setting</h2><br>
                 <div class="setting-item">
                     <label for="theme-switch">Dark Mode:</label>
                     <label class="switch">
-                        <input type="checkbox" id="theme-switch" aria-checked="false" />
+                       <input type="checkbox" id="theme-switch" aria-checked="false" />
                         <span class="slider"></span>
                     </label>
                 </div>
@@ -87,9 +90,6 @@
         </section>
 
     </main>
-
-
-
-    
+<script src="TaskManager.js"></script>
 </body>
 </html>

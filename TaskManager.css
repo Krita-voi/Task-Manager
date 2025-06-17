@@ -217,3 +217,7 @@ form button:hover {
   background-color: #f3f4f6;
   cursor: pointer;
 }
+
+.hidden{
+    display:none;
+}
