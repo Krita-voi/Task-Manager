@@ -1,5 +1,5 @@
 const buttons = document.querySelectorAll('.nav-btn');
-const secitons = document.querySelectorAll('.page');
+const sections = document.querySelectorAll('.page');
 
 buttons.forEach(button => {
     button.addEventListener('click',()=>{
@@ -12,7 +12,7 @@ buttons.forEach(button => {
         button.classList.add('active');
 
         //hide all secitons
-        secitons.forEach(secition => secitons.classList.add('hidden'));
+        sections.forEach(secition => secition.classList.add('hidden'));
 
         //show target section
         const targetSection = document.getElementById(targetId);
