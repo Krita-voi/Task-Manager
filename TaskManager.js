@@ -33,7 +33,7 @@ const taskList = document.getElementById('task-list');
 let task = []
 
 function Tasks() {
-    // Clear current list
+    // Clearing list
     taskList.innerHTML = '';
 
     task.forEach((task, index) => {
@@ -48,14 +48,14 @@ function Tasks() {
             task.completed = checkbox.checked;
         });
 
-        // Task title and date
+        // title and date
         const titleSpan = document.createElement('span');
         titleSpan.textContent = `${task.title} (Due: ${task.date})`;
         if (task.completed) {
             titleSpan.style.textDecoration = 'line-through';
             titleSpan.style.color = 'black';
         }
-        // Delete button for task
+        // Delete btn for task
         const deleteBtn = document.createElement('button');
         deleteBtn.textContent = 'Delete';
         deleteBtn.setAttribute('aria-label', `Delete task "${task.title}"`);
