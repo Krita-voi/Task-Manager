@@ -223,3 +223,46 @@ form button:hover {
 }
 
 
+/* Dark Theme Styles */
+body.dark-theme {
+    background-color: #1f2937;
+    color: #f9fafb;
+}
+
+body.dark-theme nav {
+    background-color: #111827;
+    color: #f9fafb;
+}
+
+body.dark-theme nav button:hover,
+body.dark-theme nav button.active {
+    background-color: #1e40af;
+}
+
+body.dark-theme .stats-card {
+    background-color: #374151;
+    color: #f9fafb;
+}
+
+body.dark-theme form input,
+body.dark-theme form button {
+    background-color: #1f2937;
+    color: #f9fafb;
+    border: 1px solid #4b5563;
+}
+
+body.dark-theme .task-list li {
+    background-color: #1f2937;
+    color: #f9fafb;
+}
+
+body.dark-theme .calendar-control,
+body.dark-theme .calendar-header {
+    background-color: #1f2937;
+    color: #f9fafb;
+}
+
+
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
