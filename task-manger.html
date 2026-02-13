@@ -1,95 +1,101 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="TaskManager.css">
-    <title> Task Management  </title>
-    
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="TaskManager.css" />
+    <title>Task Management</title>
+  </head>
+  <body>
     <nav>
-        <h1>Task Management</h1>
-        <div class="navbar-items">
-            <button class="nav-btn active" data-target="dashboard"> Dashboard </button>
-            <button class="nav-btn" data-target="tasks"> Tasks </button>
-            <button class="nav-btn" data-target="calendar"> Calendar </button>
-            <button class="nav-btn" data-target="analytics"> Analytics </button>
-            <button class="nav-btn" data-target="setting"> Setting </button>
-        </div>
+      <h1>Task Management</h1>
+      <div class="navbar-items">
+        <button class="nav-btn active" data-target="dashboard">
+          Dashboard
+        </button>
+        <button class="nav-btn" data-target="tasks">Tasks</button>
+        <button class="nav-btn" data-target="calendar">Calendar</button>
+        <button class="nav-btn" data-target="analytics">Analytics</button>
+        <button class="nav-btn" data-target="setting">Setting</button>
+      </div>
     </nav>
 
-
     <main>
-        <section id="dashboard" class="page">
-            <h2> Dashboard </h2>
-            <div class="stats">
-                <div class="stats-card">
-                    <h3>Total Tasks </h3>
-                    <p id="Total-tasks">0</p>
-                </div>
-                <div class="stats-card">
-                    <h3>Completed</h3>
-                    <p id="completed-task">0</p>
-                </div>
-                <div class="stats-card">
-                    <h3>Pending</h3>
-                    <p id="Pending-task">0</p>
-                </div>
-                    <div class="stats-card">
-                    <h3>Today's task</h3>
-                    <p id="Today-task">0</p>
-                </div>
-            </div>
-        </section>
-        <section id="tasks" class="page hidden">
-            <h2>Tasks</h2>
-            <form id="task-form" autocomplete="off">
-                <input type="text" id="task-title-input" placeholder="Task title" required aria-label="Task title">
-                <input type="date" id="task-date-input" required ="Task due date" />
-                <button id="tsk-btn" type="submit" aria-label="Add or Save Task">Add Task</button>
-            </form>
-             <ul class="task-list" id="task-list"></ul>
-        </section>
-        
-        <section id="calendar" class="page hidden">
-            <h2>Calendar</h2>
-             <div class="calendar-header" >
-                <button id="prevBtn">&lt</button>
-                <div class="calendar-month" id="calendar-month"></div>
-                <button id="nxtBtm">&gt</button>
-            </div>
-            <div class="calendar-control">
-                <table>
-                    <thead>
-                    <tr>
-                        <th scope="col">Sun</th>
-                        <th scope="col">Mon</th>
-                        <th scope="col">Tue</th>
-                        <th scope="col">Wed</th>
-                        <th scope="col">Thu</th>
-                        <th scope="col">Fri</th>
-                        <th scope="col">Sat</th>
-                    </tr>
-                    </thead>
-                </table>
-            </div>
-        </section>
+      <section id="dashboard" class="page">
+        <h2>Dashboard</h2>
+        <div class="stats">
+          <div class="stats-card">
+            <h3>Total Tasks</h3>
+            <p id="Total-tasks">0</p>
+          </div>
+          <div class="stats-card">
+            <h3>Completed</h3>
+            <p id="completed-task">0</p>
+          </div>
+          <div class="stats-card">
+            <h3>Pending</h3>
+            <p id="Pending-task">0</p>
+          </div>
+          <div class="stats-card">
+            <h3>Today's task</h3>
+            <p id="Today-task">0</p>
+          </div>
+        </div>
+      </section>
+      <section id="tasks" class="page hidden">
+        <h2>Tasks</h2>
+        <form id="task-form" autocomplete="off">
+          <input
+            type="text"
+            id="task-title-input"
+            placeholder="Task title"
+            required
+            aria-label="Task title"
+          />
+          <input type="date" id="task-date-input" required="Task due date" />
+          <button id="tsk-btn" type="submit" aria-label="Add or Save Task">
+            Add Task
+          </button>
+        </form>
+        <ul class="task-list" id="task-list"></ul>
+      </section>
 
-        <section id="setting" class="page hidden">
-            <h2>Setting</h2><br>
-                <div class="setting-item">
-                    <label for="theme-switch">Dark Mode:</label>
-                    <label class="switch">
-                       <input type="checkbox" id="theme-switch" aria-checked="false" />
-                        <span class="slider"></span>
-                    </label>
-                </div>
-            
+      <section id="calendar" class="page hidden">
+        <h2>Calendar</h2>
+        <div class="calendar-header">
+          <button id="prevBtn">&lt</button>
+          <div class="calendar-month" id="calendar-month"></div>
+          <button id="nxtBtm">&gt</button>
+        </div>
+        <div class="calendar-control">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Sun</th>
+                <th scope="col">Mon</th>
+                <th scope="col">Tue</th>
+                <th scope="col">Wed</th>
+                <th scope="col">Thu</th>
+                <th scope="col">Fri</th>
+                <th scope="col">Sat</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+      </section>
 
-        </section>
-
+      <section id="setting" class="page hidden">
+        <h2>Setting</h2>
+        <br />
+        <div class="setting-item">
+          <label for="theme-switch">Dark Mode:</label>
+          <label class="switch">
+            <input type="checkbox" id="theme-switch" aria-checked="false" />
+            <span class="slider"></span>
+          </label>
+        </div>
+      </section>
     </main>
-<script src="TaskManager.js"></script>
-</body>
+    <script src="TaskManager.js"></script>
+  </body>
 </html>

@@ -1,152 +1,147 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-
-html,body{
-    margin: 0; padding: 0;
-    font-family: 'Poppins',sans-serif;
-    background-color: #f9fafb;
-    color: #374151;
-    height: 100%;
-
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #f9fafb;
+  color: #374151;
+  height: 100%;
 }
-
 
 a {
-    color: #4f46e5;
-    text-decoration: none;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
+  color: #4f46e5;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
 
- a:hover {
-    color: #4f46e5;
+a:hover {
+  color: #4f46e5;
 }
 
-header{
-    background-color: #4f46e5;
-    color: white;
-    padding: 1rem 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+header {
+  background-color: #4f46e5;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 header h1 {
-    font-weight: 700;
-    font-size: 1.5rem;
-    
+  font-weight: 700;
+  font-size: 1.5rem;
 }
 
-
-nav{
-    display: flex;
-    justify-content: space-around;
-    gap: 1rem;  
-    background-color: #4f46e5;   
-    color: white;
+nav {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  background-color: #4f46e5;
+  color: white;
 }
 
-.navbar-items{
-    display: flex;
-
+.navbar-items {
+  display: flex;
 }
 
 nav button {
-    background: transparent;
-    border: none;
-    color: white;
-    font-weight: 600;
-    font-size: 1rem;
-    padding: 0.5rem 0.75rem;
-    border-radius: 4px;
-    cursor: pointer;
-    transition:0.3s ease-in-out;
+  background: transparent;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
 
-nav button:hover, nav button.active {
-    background: #4338ca;
+nav button:hover,
+nav button.active {
+  background: #4338ca;
 }
 
 main {
-    padding: 1.5rem 2rem;
-    max-width: 900px;
-    margin: 3rem;
-    min-height: 5vh;
+  padding: 1.5rem 2rem;
+  max-width: 900px;
+  margin: 3rem;
+  min-height: 5vh;
 }
 
 /* dash board*/
 
-section h2{
-    display: flex;
-    justify-content: flex-start;
-    margin: 3rem 10rem 1.5rem 10rem; /* used for top, right, buttom and left respectively*/
-    margin-top: 5rem;
-    font-weight: 600;
-    font-size: 1.75rem;
+section h2 {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 2rem 1.5rem 2rem;
+  margin-top: 5rem;
 }
 
-.stats{
-    display: flex;
-    gap: 3rem;
-    justify-content: space-between;
+.stats {
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-start;
+  margin-left: 2rem;
 }
 
-
-.stats-card{
-    flex: 1 1 150px;
-    background-color: hsla(70, 100%, 99%, 0.986);
-    text-align: center;
-    justify-content: space-around;
-    padding: 1rem 1.5rem;
-    border-radius: 8px;
-    box-shadow: 1px 1px 2px ;
-    font-weight: 300;   
-    font-size: 1rem;
-    font-family: 'Poppins',sans-serif;
+.stats-card {
+  flex: 1 1 150px;
+  background-color: hsla(70, 100%, 99%, 0.986);
+  text-align: center;
+  justify-content: space-around;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 1px 1px 2px;
+  font-weight: 300;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
 }
 
 .stat-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.25rem;
-
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
 }
 
 #Total-tasks,
 #completed-task,
 #Pending-task,
-#Today-task{
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
+#Today-task {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
 }
 
 /* Taks */
 
-#tasks h2{
-    margin-bottom: 1rem;
-    font-weight: 600;
-    font-size: 1.75rem;
+#tasks h2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 1.75rem;
 }
 
-
-form{
-    display: flex;
-    gap: 1rem;
-    margin: 2rem 10rem; /* 2rem for top&buttom and 10rem for left&right */
-    justify-content: space-between;
-    align-items: end;
-    flex-wrap: wrap;
+form {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 10rem; /* 2rem for top&buttom and 10rem for left&right */
+  justify-content: space-between;
+  align-items: end;
+  flex-wrap: wrap;
 }
 
-form input{
-    flex: 1 1 200px;
-    padding: 0.5rem 0.75rem;
-    font-size: 1rem;
-    border: 1px solid #d1d5db;
-    border-radius: 4px;
-    transition: 0.3s ease-in-out;
+form input {
+  flex: 1 1 200px;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  transition: 0.3s ease-in-out;
 }
 
 form button {
@@ -161,20 +156,18 @@ form button {
   transition: background-color 0.3s ease;
 }
 
-
 form button:hover {
   background-color: #4338ca;
 }
 
 /* calender */
 
-.calendar-header{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 10px;
+.calendar-header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
 }
-
 
 .calendar-section {
   margin: 3rem 10rem;
@@ -218,51 +211,78 @@ form button:hover {
   cursor: pointer;
 }
 
-.hidden{
-    display:none;
+.hidden {
+  display: none;
 }
-
 
 /* Dark Theme Styles */
 body.dark-theme {
-    background-color: #1f2937;
-    color: #f9fafb;
+  background-color: #1f2937;
+  color: #f9fafb;
 }
 
 body.dark-theme nav {
-    background-color: #111827;
-    color: #f9fafb;
+  background-color: #111827;
+  color: #f9fafb;
 }
 
 body.dark-theme nav button:hover,
 body.dark-theme nav button.active {
-    background-color: #1e40af;
+  background-color: #1e40af;
 }
 
 body.dark-theme .stats-card {
-    background-color: #374151;
-    color: #f9fafb;
+  background-color: #374151;
+  color: #f9fafb;
 }
 
 body.dark-theme form input,
 body.dark-theme form button {
-    background-color: #1f2937;
-    color: #f9fafb;
-    border: 1px solid #4b5563;
+  background-color: #1f2937;
+  color: #f9fafb;
+  border: 1px solid #4b5563;
 }
 
 body.dark-theme .task-list li {
-    background-color: #1f2937;
-    color: #f9fafb;
+  background-color: #1f2937;
+  color: #f9fafb;
 }
 
 body.dark-theme .calendar-control,
 body.dark-theme .calendar-header {
-    background-color: #1f2937;
-    color: #f9fafb;
+  background-color: #1f2937;
+  color: #f9fafb;
 }
 
-
 body {
-    transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+/* added for card like display*/
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 10rem;
+}
+
+.task-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  padding: 0.6rem 1rem;
+  margin-bottom: 0.6rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.task-list button {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  cursor: pointer;
 }
