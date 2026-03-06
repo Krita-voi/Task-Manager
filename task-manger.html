@@ -41,6 +41,7 @@
           </div>
         </div>
       </section>
+
       <section id="tasks" class="page hidden">
         <h2>Tasks</h2>
         <form id="task-form" autocomplete="off">
@@ -61,25 +62,16 @@
 
       <section id="calendar" class="page hidden">
         <h2>Calendar</h2>
-        <div class="calendar-header">
-          <button id="prevBtn">&lt</button>
-          <div class="calendar-month" id="calendar-month"></div>
-          <button id="nxtBtm">&gt</button>
-        </div>
-        <div class="calendar-control">
-          <table>
-            <thead>
-              <tr>
-                <th scope="col">Sun</th>
-                <th scope="col">Mon</th>
-                <th scope="col">Tue</th>
-                <th scope="col">Wed</th>
-                <th scope="col">Thu</th>
-                <th scope="col">Fri</th>
-                <th scope="col">Sat</th>
-              </tr>
-            </thead>
-          </table>
+        <div class="calendar-section">
+          <iframe
+            src="https://calendar.google.com/calendar/embed?src=en.np%23holiday%40group.v.calendar.google.com&ctz=Asia%2FKathmandu"
+            style="border: 0; border-radius: 8px"
+            width="100%"
+            height="600"
+            frameborder="0"
+            scrolling="no"
+          >
+          </iframe>
         </div>
       </section>
 
@@ -95,6 +87,7 @@
         </div>
       </section>
     </main>
+
     <script src="TaskManager.js"></script>
   </body>
 </html>
